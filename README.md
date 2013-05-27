@@ -5,46 +5,29 @@
 используя стандартные в компании http://brandymint.ru/ лайауты и
 настройки.
 
-
 Пример
 ===
 
-    $ \curl -L https://raw.github.com/BrandyMint/rails4_template/master/bootstrap.sh | bash --name Masha
-
-Процесс использования
-===
-
-1. Создаем пустой репозиторий на github.
-2. Придумать название для проекта.
-3. Заинициализировать проект на основе шаблона:
-
-    > git clone git@github.com:BrandyMint/rails4_template.git <новый_каталог>
-    > ./set_name.sh <ИмяНовогоПроекта>  # Переименовываем namespace проекта в нужный
-
-Например:
-
-    > git clone git@github.com:BrandyMint/rails4_template.git masha
-    > cd masha
-    > git remote set-url origin https://github.com/BrandyMint/masha
-    > ./set_name.sh Masha
+    $ \curl -L https://raw.github.com/BrandyMint/rails4_template/master/bootstrap.sh | bash -s Masha
 
 
-Что делать с git-ом?
-    > git remote set-url origin <url нового репо>
-    > git add .
-    > git commit -m 'first commit'
-    > git push
-    > ./s                               # запускаем web-сервер
+Что при этои происходится?
 
-Новый проект готов к использованию.
+1. Клонируется проект `rails4_template` в каталог производный от
+указанного имени.
+2. Рельсовое приложение переименуется в указанное имя
+(`Masha::Application`)
+3. Базу тоже назовут в ее честь.
+4. Запустится `bundle update`
+5. Пропишется указанный репозиторий (если указан) и зальется первый
+комит.
 
-Дальнейшие действия
-===
+Что делать дальше?
+==================
 
-1. Настраиваем `./config/application.yml` и `./config/database.yml`
-2. `bundle update`
-3. Регистрируем проект в http://errbit.brandymint.ru/apps и вписываем
-ключи в `./config/initializers/airbrake.rb`
+1. Настроить `./config/application.yml` и `./config/database.yml`
+2. Зарегистрировать проект в http://errbit.brandymint.ru/apps и вписать
+ключи `./config/initializers/airbrake.rb`
 
 История
 =======
