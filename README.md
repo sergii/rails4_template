@@ -15,6 +15,7 @@
 Например:
 
     > git clone git@github.com:BrandyMint/rails4_template.git masha
+    > cd masha
     > git remote set-url origin https://github.com/BrandyMint/masha
     > ./bootstrap Masha
     > git add .
