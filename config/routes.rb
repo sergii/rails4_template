@@ -1,4 +1,4 @@
-Ttt::Application.routes.draw do
+Rails4Template::Application.routes.draw do
   get "welcome/index"
   get "home/index"
   root 'welcome#index'
