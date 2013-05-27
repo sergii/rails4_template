@@ -9,7 +9,7 @@
 ===
 
     > git clone git@github.com:BrandyMint/rails4_template.git <новый_каталог>
-    > git remote set-url origin <url нового репо>`
+    > git remote set-url origin <url нового репо>
     > ./bootstrap <ИмяНовогоПроекта>  # Переименовываем namespace проекта в нужный
 
 Например:
