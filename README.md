@@ -5,8 +5,11 @@
 используя стандартные в компании http://brandymint.ru/ лайауты и
 настройки.
 
-$ \curl -L https://get.rvm.io | bash -s stable --rails 
 
+Пример
+===
+
+    $ \curl -L https://raw.github.com/BrandyMint/rails4_template/master/bootstrap.sh | bash --name Masha
 
 Процесс использования
 ===
