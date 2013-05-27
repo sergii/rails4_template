@@ -7,28 +7,34 @@ usage()
   printf "%b" "
 Запуск
 
- ./bootstrap --name <ИМЯ_ПРОЕКТА> --git <git_repo>
+ ./bootstrap <ИМЯ_ПРОЕКТА> --git <git_repo>
 "
 }
+
+set_name()
+{
+  name=$1
+  if echo $name | grep -e '^[A-Z]' > /dev/null; then
+    echo "Название проекта: $name"
+  elif [ -z "$name" ]; then
+    usage
+    exit 2
+  else
+    echo "Проект должен называться с заглавной буквы, $name не подходит."
+    exit 4
+  fi
+}
+
+set_name $1
+shift
 
 while (( $# > 0 ))
 do
   token="$1"
-  shift
   case "$token" in
     --git)
       git=$1
       echo "Кину проект в репозтоирий: $git"
-      shift
-      ;;
-    --name)
-      name=$1
-      if echo $name | grep -e '^[A-Z]'; then
-        echo "Название проекта: $name"
-      else
-        echo "Проект должен называться с заглавной буквы, $name не подходит."
-        exit 4
-      fi
       shift
       ;;
     help|usage)
