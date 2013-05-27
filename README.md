@@ -8,16 +8,19 @@
 Процесс использования
 ===
 
-   > git clone git@github.com:BrandyMint/rails4_template.git <новый_каталог>
-   > git remote set-url origin <url нового репо>`
-   > # Переименовываем namespace проекта в нужный
-   > ./bootstrap <имя нового проекта>`
+    > git clone git@github.com:BrandyMint/rails4_template.git <новый_каталог>
+    > git remote set-url origin <url нового репо>`
+    > ./bootstrap <имя нового проекта>  # Переименовываем namespace проекта в нужный
 
 Например:
 
-   > git clone git@github.com:BrandyMint/rails4_template.git masha
-   > git remote set-url origin https://github.com/BrandyMint/masha
-   > ./bootstrap Masha
+    > git clone git@github.com:BrandyMint/rails4_template.git masha
+    > git remote set-url origin https://github.com/BrandyMint/masha
+    > ./bootstrap Masha
+    > git add .
+    > git commit -m 'first commit'
+    > git push
+    > ./s                               # запускаем web-сервер
 
 Новый проект готов к использованию.
 
