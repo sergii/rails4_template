@@ -31,6 +31,7 @@ shift
 while (( $# > 0 ))
 do
   token="$1"
+  shift
   case "$token" in
     --git)
       git=$1
