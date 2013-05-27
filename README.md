@@ -8,13 +8,19 @@
 Процесс использования
 ===
 
-1. Форкаем. Переименовываем форк в название нового проекта.
-2. git clone <fork> <каталог для нового проекта>
-3. Переименовываем namespace проекта в нужный:
-> ./bootstrap <имя нового проекта>
+> git clone git@github.com:BrandyMint/rails4_template.git
+<новый_каталог>
+> git remote set-url origin <url нового репо>`
+> # Переименовываем namespace проекта в нужный
+> ./bootstrap <имя нового проекта>`
 
-Проект готов к использованию.
+Например:
 
+> git clone git@github.com:BrandyMint/rails4_template.git masha
+> git remote set-url origin https://github.com/BrandyMint/masha
+> ./bootstrap Masha
+
+Новый проект готов к использованию.
 
 Дальнейшие действия
 ===
