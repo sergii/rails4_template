@@ -4,8 +4,9 @@ NAME=$1
 
 if [ -n "$1" ]; then
   echo "Переименовываю проект в $NAME"
-  perl -i -p -e 's/Rails4Application/NAME/g' app/**/*.rb config/**/*.rb Rakefile
+  perl -i -p -e "s/Rails4Template/$NAME/g" app/**/*.rb config/**/*.rb Rakefile
   cp ./config/database.yml.example ./config/database.yml
+  perl -i -p -e "s/ttt_/$NAME_/g" ./config/database.yml
 else
   echo "Запуск: ./bootstrap <ИМЯ_ПРОЕКТА>"
 fi
