@@ -5,19 +5,29 @@
 используя стандартные в компании http://brandymint.ru/ лайауты и
 настройки.
 
+$ \curl -L https://get.rvm.io | bash -s stable --rails 
+
+
 Процесс использования
 ===
 
+1. Создаем пустой репозиторий на github.
+2. Придумать название для проекта.
+3. Заинициализировать проект на основе шаблона:
+
     > git clone git@github.com:BrandyMint/rails4_template.git <новый_каталог>
-    > git remote set-url origin <url нового репо>
-    > ./bootstrap <ИмяНовогоПроекта>  # Переименовываем namespace проекта в нужный
+    > ./set_name.sh <ИмяНовогоПроекта>  # Переименовываем namespace проекта в нужный
 
 Например:
 
     > git clone git@github.com:BrandyMint/rails4_template.git masha
     > cd masha
     > git remote set-url origin https://github.com/BrandyMint/masha
-    > ./bootstrap Masha
+    > ./set_name.sh Masha
+
+
+Что делать с git-ом?
+    > git remote set-url origin <url нового репо>
     > git add .
     > git commit -m 'first commit'
     > git push
