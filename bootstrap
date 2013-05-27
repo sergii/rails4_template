@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+NAME=$1
+
+if [ -n "$1" ]; then
+  echo "Переименовываю проект в $NAME"
+  perl -i -p -e 's/Rails4Application/NAME/g' app/**/*.rb config/**/*.rb Rakefile
+  cp ./config/database.yml.example ./config/database.yml
+else
+  echo "Запуск: ./bootstrap <ИМЯ_ПРОЕКТА>"
+fi
