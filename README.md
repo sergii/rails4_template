@@ -20,6 +20,10 @@
 
     $ \curl -L https://raw.github.com/BrandyMint/rails4_template/master/bootstrap.sh | bash -s Masha
 
+а если у нас уже есть пустой репозиторий на github, то
+
+    $ \curl -L https://raw.github.com/BrandyMint/rails4_template/master/bootstrap.sh | bash -s Masha --git git@github.com:BrandyMint/masha.git
+
 
 Что при этои происходится?
 
