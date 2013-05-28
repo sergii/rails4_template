@@ -7,7 +7,7 @@
 Отличается от `rails new` тем что:
 
 * База уже postgres (с `pg_array_parser`)
-* `Twitter Bootstrap`, с правильными лайаутами.
+* `Twitter Bootstrap`, с правильными лайаутами, флешками и навигацией.
 * `simple_form`, `simple_navigation` и `kaminari` с настроенной
   поддержкой `twitter bootstrap`
 * Полный комплект `pry` и прочих плюшек, вроде `better_errors` для `development`
@@ -46,9 +46,9 @@
 История
 =======
 
-layout взяты на основе этого проекта
-http://railsapps.github.io/rails-default-application-layout.html
-http://railsapps.github.io/twitter-bootstrap-rails.html
+Верстка лайаутов взята отсюда:
+* http://railsapps.github.io/rails-default-application-layout.html
+* http://railsapps.github.io/twitter-bootstrap-rails.html
 
 
 Альтернативы
