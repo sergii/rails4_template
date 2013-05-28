@@ -11,6 +11,7 @@
 * `simple_form`, `simple_navigation` и `kaminari` с настроенной
   поддержкой `twitter bootstrap`
 * Полный комплект `pry` и прочих плюшек, вроде `better_errors` для `development`
+* Русская локаль для `simple_form`
 * Настроенный `rspec`, `capybara` и `guard`
 * Настроен `simple_cov`
 * `mailcatcher`, `recipient_interceptor`, `foreman` и прочие типичные гемы в `Gemfile`
@@ -42,6 +43,7 @@
 1. Настроить `./config/application.yml` и `./config/database.yml`
 2. Зарегистрировать проект в http://errbit.brandymint.ru/apps и вписать
 ключи `./config/initializers/airbrake.rb`
+3. Поправить `README.md`
 
 История
 =======
