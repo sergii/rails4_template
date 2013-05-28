@@ -48,7 +48,6 @@ gem 'inherited_resources'
 # Используется для сидирования обьектов
 #gem 'forgery'
 #gem 'ffaker'
-#gem 'factory_girl_rails'
 
 
 # Вьюхи и презентеры
@@ -130,8 +129,8 @@ end
 group :development do
   gem 'ruby-graphviz'
   gem 'rails-erd'
-  gem 'ruby-prof'
-  gem 'rspec-prof'
+  #gem 'ruby-prof'
+  #gem 'rspec-prof'
   # HolePicker is a Ruby gem for quickly checking all your Gemfile.lock files for gem versions with known vulnerabilities.
   gem 'holepicker', :require => false
 
@@ -158,6 +157,7 @@ group :development do
 
   gem 'pry-remote'
 
+  gem 'factory_girl_rails'
   gem 'rspec-console'
 
   # Start a pry session whenever something goes wrong.
@@ -207,6 +207,7 @@ group :development do
 end
 
 group :test do
+  gem 'factory_girl_rails'
   gem 'rspec-prof'
   gem 'rb-inotify', '~> 0.9', :require => false
   # Start Pry in the context of a failed test

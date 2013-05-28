@@ -1,9 +1,19 @@
 Что за шаблон?
 ===
 
-Это шаблон приложения на Rails 4.0 для удобного создания новых проектов,
-используя стандартные в компании http://brandymint.ru/ лайауты и
-настройки.
+Это болванка приложения на Rails 4.0, которую удобно брать за основу для
+создания новых проектов.
+
+Отличается от `rails new` тем что:
+
+* База уже postgres (с `pg_array_parser`)
+* `Twitter Bootstrap`, с правильными лайаутами.
+* `simple_form`, `simple_navigation` и `kaminari` с настроенной
+  поддержкой `twitter bootstrap`
+* Полный комплект `pry` и прочих плюшек, вроде `better_errors` для `development`
+* Настроенный `rspec`, `capybara` и `guard`
+* Настроен `simple_cov`
+* `mailcatcher`, `recipient_interceptor`, `foreman` и прочие типичные гемы в `Gemfile`
 
 Пример
 ===
