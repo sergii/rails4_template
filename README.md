@@ -58,3 +58,4 @@
 
 * https://github.com/thoughtbot/suspenders
 * http://railsapps.github.io/
+* https://github.com/RailsApps/rails_apps_composer
