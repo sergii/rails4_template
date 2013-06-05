@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ORIGINAL_REPO='./rails4_template'
+ORIGINAL_REPO='git://github.com/BrandyMint/rails4_template.git'
 
 usage()
 {
