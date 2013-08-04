@@ -69,6 +69,20 @@ if [ -n "$name" ]; then
 
     bundle
 
+    # Создаем репозиторий на гитхабе
+    CURRENTDIR=${PWD##*/}
+    echo -n "Enter the login on github.com : "
+    read GITHUBUSER
+
+    curl -u ${GITHUBUSER} https://api.github.com/user/repos -d "{\"name\": \"${CURRENTDIR}\" }"
+     
+    echo "Continue..."
+    git init
+    git add .
+    git commit -m "first commit"
+    git remote add origin git@github.com:${GITHUBUSER}/${CURRENTDIR}.git
+    git push -u origin master
+
     if [ -n "$git" ]; then
       git init
       git remote add origin $git
