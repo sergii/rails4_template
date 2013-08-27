@@ -181,9 +181,9 @@ group :development do
   gem "hpricot", ">= 0.8.6"
   gem "ruby_parser", ">= 2.3.1"
 
-  gem 'capistrano'
-  gem 'capistrano-rbenv'
-  gem 'capistrano-recipes0', '>= 1.1.0', :git => 'git://github.com/BrandyMint/capistrano-recipes0.git'
+  gem 'capistrano', :require => false
+  gem 'capistrano-rbenv', :require => false
+  gem 'capistrano-recipes0', '>= 1.2.0', :git => 'git://github.com/BrandyMint/capistrano-recipes0.git', :require => false
 
   gem "better_errors"
   gem "binding_of_caller"
@@ -202,7 +202,7 @@ group :development do
 
   # Пока не нужны
   #gem 'ruby-graphviz'
-  gem "mailcatcher"
+  gem "mailcatcher", :require => false
   gem 'foreman'
 end
 
