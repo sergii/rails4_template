@@ -508,7 +508,7 @@ DEPENDENCIES
   bootstrap-sass
   capistrano
   capistrano-rbenv
-  capistrano-recipes0 (>= 1.1.0)!
+  capistrano-recipes0 (>= 1.2.0)!
   capybara
   capybara-screenshot
   coffee-rails!
