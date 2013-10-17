@@ -94,8 +94,8 @@ gem 'jbuilder', '~> 1.0.1'
 #gem 'airbrake_user_attributes'
 gem 'airbrake', :github => 'airbrake/airbrake'
 
-gem 'bootstrap-sass' #, 'git://github.com/thomas-mcdonald/bootstrap-sass.git'
-gem 'compass-rails', git: "git://github.com/milgner/compass-rails.git", ref: "1749c06f15dc4b058427e7969810457213647fb8"
+gem 'bootstrap-sass', :git => 'git://github.com/thomas-mcdonald/bootstrap-sass.git' # '~> 2.3.2.0'
+gem 'compass-rails', '~> 2.0.alpha.0'
 
 group :assets do
   # Use edge version of sprockets-rails
