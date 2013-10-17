@@ -97,29 +97,28 @@ gem 'airbrake', :github => 'airbrake/airbrake'
 gem 'bootstrap-sass', :git => 'git://github.com/thomas-mcdonald/bootstrap-sass.git' # '~> 2.3.2.0'
 gem 'compass-rails', '~> 2.0.alpha.0'
 
-group :assets do
-  # Use edge version of sprockets-rails
-  gem 'sprockets-rails', github: 'rails/sprockets-rails'
+#assets
+# Use edge version of sprockets-rails
+gem 'sprockets-rails', github: 'rails/sprockets-rails'
 
-  # Use SCSS for stylesheets
-  gem 'sass-rails',   github: 'rails/sass-rails'
+# Use SCSS for stylesheets
+gem 'sass-rails',   github: 'rails/sass-rails'
 
-  # Use Uglifier as compressor for JavaScript assets
-  gem 'uglifier', '~> 1.3'
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '~> 1.3'
 
-  # Use CoffeeScript for .js.coffee assets and views
-  gem 'coffee-rails', github: 'rails/coffee-rails'
+# Use CoffeeScript for .js.coffee assets and views
+gem 'coffee-rails', github: 'rails/coffee-rails'
 
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', platforms: :ruby
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+# gem 'therubyracer', platforms: :ruby
 
 
-  # Хорошая альтернатива jquery-ui-rails
-  #  gem 'jquery-ui-sass-rails'
-  # gem 'jquery_datepicker'
+# Хорошая альтернатива jquery-ui-rails
+#  gem 'jquery-ui-sass-rails'
+# gem 'jquery_datepicker'
 
-  # gem 'select2-rails'
-end
+# gem 'select2-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -181,10 +180,6 @@ group :development do
   gem "hpricot", ">= 0.8.6"
   gem "ruby_parser", ">= 2.3.1"
 
-  gem 'capistrano', :require => false
-  gem 'capistrano-rbenv', :require => false
-  gem 'capistrano-recipes0', '>= 1.2.0', :git => 'git://github.com/BrandyMint/capistrano-recipes0.git', :require => false
-
   gem "better_errors"
   gem "binding_of_caller"
 
@@ -237,4 +232,15 @@ group :test do
   gem "launchy", ">= 2.1.2"
   gem 'turn', :require => false
   #gem "test_active_admin", :git => "git://github.com/BrandyMint/test_active_admin.git"
+end
+
+group :deploy do
+  gem 'capistrano', '~> 3.0', :require => false
+  gem 'capistrano-rbenv', github: 'capistrano/rbenv', :require => false
+  gem 'capistrano-rails', github: 'capistrano/rails', :require => false
+  gem 'capistrano-bundler', github: 'capistrano/bundler', :require => false
+end
+
+group :production do
+  gem 'unicorn'
 end
