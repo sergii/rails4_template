@@ -4,6 +4,8 @@ mini_magic*
 .project
 .bundle
 profiles/*
+doc/*
+.yardoc
 log/*
 public/assets/
 tags

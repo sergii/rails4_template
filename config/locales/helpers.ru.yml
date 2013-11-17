@@ -4,7 +4,7 @@ ru:
     years: "%{count} лет."
     days: "%{count} дн."
     submit:
-      defaults:
-        new: Создать
-        create: Создать
-        update: Изменить
+      create: Создать
+      update: Изменить
+      # model:
+      #  new: Создать

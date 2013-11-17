@@ -59,6 +59,14 @@ TODO
 * http://railsapps.github.io/rails-default-application-layout.html
 * http://railsapps.github.io/twitter-bootstrap-rails.html
 
+Базовые вещи
+============
+
+* Все вьюхи делаются с поддержкой bootstrap (формы, меню)
+* В течении 3-х дней после запуска прокта настранивается test suite с
+интеграционными тестами на регистрацию
+* Деплой и обсуждение каждый день (в обед)
+
 
 Альтернативы
 ============
