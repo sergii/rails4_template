@@ -52,6 +52,16 @@ TODO
 1. Копировать database.yml и давать базе название в виде названия проекта
 2. bower
 
+Константы
+=========
+
+При генерации проекта происходит автозамена:
+
+RailsApp -> НазваниеПриложения -> Masha
+http://RailsApp.icfdev.ru/ -> url -> http://masha.ru/
+HOSTNAME -> host -> masha.ru
+
+
 История
 =======
 
