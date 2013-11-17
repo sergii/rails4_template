@@ -44,7 +44,7 @@
 2. Зарегистрировать проект в http://errbit.brandymint.ru/apps и вписать
 ключи `./config/initializers/airbrake.rb`
 3. Поправить `README.md`
-4. 
+4. Если вы создали комит, который нужно перенсти в шаблон, воспльзуйтесь `git format-patch`
 
 TODO
 ====
