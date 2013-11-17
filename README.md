@@ -44,6 +44,12 @@
 2. Зарегистрировать проект в http://errbit.brandymint.ru/apps и вписать
 ключи `./config/initializers/airbrake.rb`
 3. Поправить `README.md`
+4. 
+
+TODO
+====
+
+1. Копировать database.yml и давать базе название в виде названия проекта
 
 История
 =======
