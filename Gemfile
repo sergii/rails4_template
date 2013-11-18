@@ -33,6 +33,8 @@ gem 'hashie'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
+# Управление версиями проекта
+gem 'semver2'
 
 # Авторизация
 # gem 'switch_user'
@@ -175,9 +177,6 @@ group :development do
 
   # rake и generator комманды в консоли
   gem 'commands'
-
-  # Управление версиями проекта
-  gem 'semver2'
 
   gem "hpricot", ">= 0.8.6"
   gem "ruby_parser", ">= 2.3.1"
