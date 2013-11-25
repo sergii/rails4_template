@@ -3,7 +3,7 @@ set :repo_url, 'REPO' #git@github.com:BrandyMint/zagorod.git'
 
 #ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
-set :deploy_to, ->{"/home/wwwHOSTNAME/#{fetch(:application)}"}
+set :deploy_to, ->{"/home/USERNAME/#{fetch(:application)}"}
 set :scm, :git
 
 # set :format, :pretty
