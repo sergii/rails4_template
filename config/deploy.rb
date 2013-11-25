@@ -16,7 +16,7 @@ set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/sys
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 set :rbenv_type, :user
-set :rbenv_ruby, '2.0.0-p247'
+set :rbenv_ruby, '2.0.0-p353'
 
 set :bundle_without, %w{development test deploy}.join(' ')
 
