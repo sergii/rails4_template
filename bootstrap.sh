@@ -69,6 +69,7 @@ if [ -n "$name" ]; then
 
     bundle
 
+    if test; then # false TODO
     # Создаем репозиторий на гитхабе
     CURRENTDIR=${PWD##*/}
     echo -n "Enter the login on github.com : "
@@ -89,6 +90,7 @@ if [ -n "$name" ]; then
       git add .
       git commit -m 'first commit'
       git push
+    fi
     fi
 
   else
