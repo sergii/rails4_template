@@ -57,8 +57,8 @@ TODO
 
 При генерации проекта происходит автозамена:
 
-RailsApp -> НазваниеПриложения -> Masha
-http://RailsApp.icfdev.ru/ -> url -> http://masha.ru/
+Rails4Template -> НазваниеПриложения -> Masha
+http://Rails4Template.icfdev.ru/ -> url -> http://masha.ru/
 HOSTNAME -> host -> masha.ru
 
 

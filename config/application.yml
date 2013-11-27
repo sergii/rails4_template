@@ -1,8 +1,8 @@
 defaults: &defaults
   app:
-    title: RailsApp
+    title: Rails4Template
 
-    asset_host: http://RailsApp.icfdev.ru/
+    asset_host: http://Rails4Template.icfdev.ru/
 
     default_url_options: &default_url_options
       host: HOSTNAME

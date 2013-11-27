@@ -1,3 +1,3 @@
 require 'semver'
 
-RailsApp.version = SemVer.find
+Rails4Template.version = SemVer.find
