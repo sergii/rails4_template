@@ -69,29 +69,26 @@ if [ -n "$name" ]; then
 
     bundle
 
-    if test; then # false TODO
-    # Создаем репозиторий на гитхабе
-    CURRENTDIR=${PWD##*/}
-    echo -n "Enter the login on github.com : "
-    read GITHUBUSER
+    CURRENTDIR=${PWD#*/}
 
-    curl -u ${GITHUBUSER} https://api.github.com/user/repos -d "{\"name\": \"${CURRENTDIR}\" }"
-     
     echo "Continue..."
     git init
     git add .
     git commit -m "first commit"
-    git remote add origin git@github.com:${GITHUBUSER}/${CURRENTDIR}.git
-    git push -u origin master
-
     if [ -n "$git" ]; then
-      git init
+      echo "Добавлять remote origin: $git"
       git remote add origin $git
-      git add .
-      git commit -m 'first commit'
-      git push
+    else
+      #echo -n "Enter the login on github.com : "
+      #read GITHUBUSER
+
+      GITHUBUSER='BrandyMint'
+      #echo "Создаем репозиторий на гитхабе"
+      #curl -u ${GITHUBUSER} https://api.github.com/user/repos -d "{\"name\": \"${CURRENTDIR}\" }"
+      echo "Добавь репозиторий после создания: git remote add origin git@github.com:${GITHUBUSER}/${dest}.git"
     fi
-    fi
+    # git remote add origin git@github.com:${GITHUBUSER}/${CURRENTDIR}.git
+    # git push -u origin master
 
   else
     echo "Ощутил проблемы при клонировании шаблона"
