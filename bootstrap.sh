@@ -59,7 +59,7 @@ if [ -n "$name" ]; then
     rm -rf .git
    
     echo "Именую проект" 
-    perl -i -p -e "s/Rails4Template/$name/g" */**/*.rb **/*.rb Rakefile
+    perl -i -p -e "s/Rails4Template/$name/g" */**/*.rb **/*.rb **/*.yml Rakefile
 
     echo "Устанавливаю настройки базы"
     cp ./config/database.yml.example ./config/database.yml
