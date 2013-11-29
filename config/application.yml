@@ -13,8 +13,7 @@ defaults: &defaults
     default_url_options:
       <<: *default_url_options
 
-  mailer_defaults:
-    <<: *action_mailer
+  mailer_defaults: &mailer_defaults
     from: 'noreply@HOSTNAME'
     host: HOSTNAME
 
@@ -33,12 +32,20 @@ test:
   capybara:
     port: 57500
 
+  mailer_defaults:
+    <<: *mailer_defaults
+
   action_mailer:
     <<: *action_mailer
     delivery_method: :test
 
 production:
   <<: *defaults
+  mailer_defaults:
+    <<: *mailer_defaults
 
-stage:
+staging:
   <<: *defaults
+  mailer_defaults:
+    <<: *mailer_defaults
+
