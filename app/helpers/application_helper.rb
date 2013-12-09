@@ -1,4 +1,10 @@
 module ApplicationHelper
+  def app_version
+    content_tag :span, :data => { :version => Rails4Template.version.to_s } do
+      'v' + Rails4Template.version.format( "%M.%m.%p" )
+    end
+  end
+
   def icon *classes
     css = classes.map{|c| "icon-#{c}"}.join(' ')
     content_tag :i, '', :class => "icon #{css}"
