@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Use unicorn as the app server
 gem 'unicorn'
 
-gem 'rails', '4.0.0'
+gem 'rails', '~> 4.0.0'
 #gem 'rails',     github: 'rails/rails'
 #gem 'arel',      github: 'rails/arel'
 # gem 'activerecord-deprecated_finders', github: 'rails/activerecord-deprecated_finders'
