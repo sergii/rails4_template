@@ -14,28 +14,6 @@ GIT
       activesupport (>= 2.3.2)
 
 GIT
-  remote: git://github.com/capistrano/bundler.git
-  revision: 8c40862ef53de8d7706682f452f6ba76502864ad
-  specs:
-    capistrano-bundler (1.0.0)
-      capistrano (>= 3.0.0.pre)
-
-GIT
-  remote: git://github.com/capistrano/rails.git
-  revision: 5f80b640a4bd981598d1ff79c365e0df8c9ef47a
-  specs:
-    capistrano-rails (1.0.0)
-      capistrano (>= 3.0.0)
-      capistrano-bundler (>= 1.0.0)
-
-GIT
-  remote: git://github.com/capistrano/rbenv.git
-  revision: 362dbc02ef963c91425767e09b4848ff7be5132b
-  specs:
-    capistrano-rbenv (0.0.1)
-      capistrano
-
-GIT
   remote: git://github.com/gregbell/active_admin.git
   revision: 131c3a4ebcf23ec5d60cb926db06a6cdb9311b55
   specs:
@@ -138,6 +116,15 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (>= 0.0.23)
+    capistrano-bundler (1.1.1)
+      capistrano (~> 3.0)
+      sshkit (>= 1.2.0)
+    capistrano-rails (1.1.0)
+      capistrano (>= 3.0.0)
+      capistrano-bundler (>= 1.0.0)
+    capistrano-rbenv (2.0.0)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2.0)
     capybara (2.1.0)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -245,7 +232,7 @@ GEM
       childprocess (>= 0.2.3)
       guard (>= 1.1)
       spork (>= 0.8.4)
-    haml (4.0.3)
+    haml (4.0.4)
       tilt
     haml-rails (0.4)
       actionpack (>= 3.1, < 4.1)
@@ -262,7 +249,7 @@ GEM
       rainbow (>= 1.1.4)
     hpricot (0.8.6)
     http_parser.rb (0.5.3)
-    i18n (0.6.5)
+    i18n (0.6.9)
     inherited_resources (1.4.1)
       has_scope (~> 0.6.0.rc)
       responders (~> 1.0.0.rc)
@@ -278,7 +265,7 @@ GEM
       turbolinks
     jquery-ui-rails (4.1.0)
       railties (>= 3.1.0)
-    json (1.8.0)
+    json (1.8.1)
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -311,7 +298,7 @@ GEM
       rack-contrib
       railties
     method_source (0.8.2)
-    mime-types (1.23)
+    mime-types (1.25.1)
     mini_portile (0.5.1)
     minitest (4.7.5)
     mono_logger (1.1.0)
@@ -323,7 +310,7 @@ GEM
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
     orm_adapter (0.5.0)
-    pg (0.16.0)
+    pg (0.17.0)
     pg_array_parser (0.0.9)
     poltergeist (1.3.0)
       capybara (~> 2.1.0)
@@ -375,7 +362,7 @@ GEM
     rack (1.5.2)
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
-    rack-protection (1.5.0)
+    rack-protection (1.5.1)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -477,7 +464,7 @@ GEM
     simplecov-html (0.7.1)
     simplecov-rcov (0.2.3)
       simplecov (>= 0.4.1)
-    sinatra (1.4.3)
+    sinatra (1.4.4)
       rack (~> 1.4)
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
@@ -491,11 +478,11 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sqlite3 (1.3.7)
+    sqlite3 (1.3.8)
     sqlite3-ruby (1.3.3)
       sqlite3 (>= 1.3.3)
-    sshkit (1.1.0)
-      net-scp
+    sshkit (1.2.0)
+      net-scp (>= 1.1.2)
       net-ssh
       term-ansicolor
     term-ansicolor (1.2.2)
@@ -509,7 +496,7 @@ GEM
       atomic
     tilt (1.4.1)
     tins (0.13.1)
-    treetop (1.4.14)
+    treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
     turbolinks (1.3.0)
@@ -520,7 +507,7 @@ GEM
     uglifier (1.3.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
-    unicorn (4.6.3)
+    unicorn (4.7.0)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
@@ -550,9 +537,9 @@ DEPENDENCIES
   bond
   bootstrap-sass (~> 3.0.2.0)
   capistrano (~> 3.0)
-  capistrano-bundler!
-  capistrano-rails!
-  capistrano-rbenv!
+  capistrano-bundler
+  capistrano-rails (~> 1.1.0)
+  capistrano-rbenv (~> 2.0)
   capybara
   capybara-screenshot
   coffee-rails!
